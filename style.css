@@ -1,0 +1,266 @@
+/*
+##################################
+Styling ##########################
+##################################
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(#c48500, #391e07);
+  background-size: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #e0dbdb;
+  width: 100vw;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+main {
+  border-radius: 24px;
+  box-shadow: 20px 30px 30px 1px rgba(0, 0, 0, 0.4);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #e0dbdb;
+  text-decoration: none;
+}
+
+.material-symbols-outlined:hover {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: rgb(200, 0, 0);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+#navbar a {
+  color: white;
+  padding: 15px 15px;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: #0e0d0c 1px 1px 1px;
+  font-weight: 100;
+}
+
+#navbar a:hover {
+  color: #0e0d0c;
+  text-underline-offset: 16px;
+  text-decoration: underline 1px;
+}
+
+#header h1 {
+  font-size: 128px;
+  font-weight: 100;
+  padding: 50px;
+  text-shadow: #0e0d0c 2px 2px 2px;
+}
+
+#header h2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 auto;
+  width: 768px;
+  line-height: 150%;
+  color: white;
+  text-shadow: #0e0d0c 1px 1px 1px;
+  padding-bottom: 50px;
+}
+
+#header a {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  text-shadow: #0e0d0c 1px 1px 1px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: white solid 1px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#header a:hover {
+  color: white;
+  text-underline-offset: 4px;
+  text-decoration: underline 1px;
+}
+
+li {
+  list-style: none;
+}
+
+iframe {
+  border-radius: 8px;
+  width: 535px;
+  height: 290px;
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styling {
+  padding: 12px 24px;
+}
+
+.articles {
+  width: 340px;
+}
+
+main h2 {
+  margin: 24px 0;
+}
+
+main h3 {
+  margin: 12px 0;
+}
+
+#data-info p {
+  color: rgb(200, 0, 0);
+  margin: 0px;
+}
+
+#data-info h3 {
+  margin: 8px;
+}
+
+#header-img {
+  background-image: url("img/header-img.png");
+  height: 100vw;
+  max-height: 520px;
+  border-radius: 24px 24px 0 0;
+}
+
+#colonization img {
+  margin-bottom: 12px;
+}
+/*
+##################################
+Sections #########################
+##################################
+*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+}
+
+#header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#data-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #231a17;
+  text-align: center;
+}
+
+#facts,
+#video-section,
+#colonization {
+  background-color: #231a17;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#didyouknow {
+  background-color: #231a17;
+  text-align: center;
+}
+
+#pop-culture {
+  background-color: #0e0d0c;
+  text-align: center;
+}
+
+.pop-culture-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-box {
+  width: 100vw;
+  max-width: 275px;
+}
+#bottom {
+  background-image: url(img/footer-ing.png);
+  height: 100vw;
+  max-height: 395px;
+  border-radius: 0 0 24px 24px;
+}
+
+#footer {
+  padding-top: 50px;
+  text-align: center;
+}
+/* 
+##################################
+Flip section #####################
+##################################
+*/
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.flip-box {
+  background-color: #c48500;
+  width: 276px;
+  height: 276px;
+  perspective: 2000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(-180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box-front {
+  background-color: #0e0d0c;
+}
+
+.flip-box-front h2 {
+  font-size: 128px;
+  font-weight: 100;
+}
+.flip-box-back {
+  background-color: #231a17;
+  transform: rotateX(-180deg);
+}
