@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="test.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
+    <!-- ---------------------------------------------------------------------------------- -->
     <title>Venus</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
         </ul>
       </div>
     </nav>
-    <!--  -->
+    <!-- ---------------------------------------------------------------------------------- -->
     <header id="header">
       <h1>Venus</h1>
       <h2>
@@ -41,12 +41,15 @@
         lead. Its thick atmosphere is primarily composed of carbon dioxide,
         making it the brightest object in our night sky after the moon.
       </h2>
-      <a href="#data-info">Start journey!</a>
+
+      <div><a href="#data-info" class="hide">Start journey!</a></div>
     </header>
     <main>
       <!-- header image -->
-      <section id="header-img"></section>
+      <section id="header-img" class="hide"></section>
       <!-- new section -->
+      <!-- ---------------------------------------------------------------------------------- -->
+
       <section id="data-info" class="styling">
         <div>
           <h3>DISTANCE FROM EARTH //</h3>
@@ -61,6 +64,7 @@
           <p>225 days</p>
         </div>
       </section>
+
       <!-- new section -->
       <section id="facts" class="styling">
         <img
@@ -89,10 +93,12 @@
             potential for habitability on other planets.
           </p>
 
-          <a href="#video-section" class="material-symbols-outlined"
-            >arrow_circle_down</a
-          >
-          <a href="#navbar" class="material-symbols-outlined">menu</a>
+          <div class="hide">
+            <a href="#video-section" class="material-symbols-outlined"
+              >arrow_circle_down</a
+            >
+            <a href="#navbar" class="material-symbols-outlined">menu</a>
+          </div>
         </div>
       </section>
       <!-- new section - VIDEO -->
@@ -112,11 +118,15 @@
             experiencing catastrophic climate change. Here are the only photos
             we have of the surface of Venus.
           </p>
-          <a href="#facts" class="material-symbols-outlined">arrow_circle_up</a>
-          <a href="#didyouknow" class="material-symbols-outlined"
-            >arrow_circle_down</a
-          >
-          <a href="#navbar" class="material-symbols-outlined">menu</a>
+          <div class="hide">
+            <a href="#facts" class="material-symbols-outlined"
+              >arrow_circle_up</a
+            >
+            <a href="#didyouknow" class="material-symbols-outlined"
+              >arrow_circle_down</a
+            >
+            <a href="#navbar" class="material-symbols-outlined">menu</a>
+          </div>
         </div>
         <div class="centering">
           <iframe
@@ -129,7 +139,7 @@
         </div>
       </section>
       <!-- new section -->
-      <section id="didyouknow" class="styling">
+      <section id="didyouknow hide" class="styling hide">
         <h2>Did you know?</h2>
         <!-- Info boxes -->
         <div id="grid-container">
@@ -272,13 +282,15 @@
           </div>
         </div>
         <br />
-        <a href="#video-section" class="material-symbols-outlined"
-          >arrow_circle_up</a
-        >
-        <a href="#colonization" class="material-symbols-outlined"
-          >arrow_circle_down</a
-        >
-        <a href="#navbar" class="material-symbols-outlined">menu</a>
+        <div class="hide">
+          <a href="#video-section" class="material-symbols-outlined"
+            >arrow_circle_up</a
+          >
+          <a href="#colonization" class="material-symbols-outlined"
+            >arrow_circle_down</a
+          >
+          <a href="#navbar" class="material-symbols-outlined">menu</a>
+        </div>
       </section>
       <!-- new section -->
       <section id="colonization" class="styling">
@@ -298,17 +310,19 @@
             acid and carbon. However, the idea is still purely speculative and
             faces numerous technological and logistical challenges.
           </p>
-          <a href="#didyouknow" class="material-symbols-outlined"
-            >arrow_circle_up</a
-          >
-          <a href="#pop-culture" class="material-symbols-outlined"
-            >arrow_circle_down</a
-          >
-          <a href="#navbar" class="material-symbols-outlined">menu</a>
+          <div class="hide">
+            <a href="#didyouknow" class="material-symbols-outlined"
+              >arrow_circle_up</a
+            >
+            <a href="#pop-culture" class="material-symbols-outlined"
+              >arrow_circle_down</a
+            >
+            <a href="#navbar" class="material-symbols-outlined">menu</a>
+          </div>
         </div>
         <img src="img/venus-colonization.png" alt="A colonization of Venus" />
       </section>
-      <!-- new section -->
+      <!-- new section --------------------------------------------------->
       <section id="pop-culture" class="styling">
         <h2>Venus in popular culture</h2>
         <div class="pop-culture-wrapper">
@@ -356,13 +370,15 @@
             </div>
           </div>
         </div>
-        <a href="#colonization" class="material-symbols-outlined"
-          >arrow_circle_up</a
-        >
-        <a href="#navbar" class="material-symbols-outlined">menu</a>
+        <div class="hide">
+          <a href="#colonization" class="material-symbols-outlined"
+            >arrow_circle_up</a
+          >
+          <a href="#navbar" class="material-symbols-outlined">menu</a>
+        </div>
       </section>
       <!-- new section -->
-      <section id="bottom"></section>
+      <section id="bottom hide"></section>
     </main>
   </body>
   <footer id="footer">
@@ -371,3 +387,20 @@
     <p>&copy 2023</p>
   </footer>
 </html>
+
+<!-- <nav id="nav">
+  <div class="inner-wrapper">
+      <svg viewBox="0 0 32 37" id="exit-btn">
+          <path id="back" d="M15.9,4.492a3,3,0,0,1,5.194,0L34.4,27.5A3,3,0,0,1,31.8,32H5.2a3,3,0,0,1-2.6-4.5Z" transform="translate(0 37) rotate(-90)" fill="#fff"/>
+      </svg>
+      
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+  </div>
+  <ul>
+      <li class="selected"><a href="#">Dashboard</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Reset Access</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+</nav> -->

@@ -61,7 +61,6 @@ h3 {
 #header h1 {
   font-size: 8rem;
   font-weight: 100;
-  padding: 50px;
   text-shadow: #0e0d0c 2px 2px 2px;
 }
 
@@ -69,11 +68,11 @@ h3 {
   font-size: 1.25rem;
   font-weight: 100;
   margin: 0 auto;
-  width: 768px;
+  /* width: 768px; */
   line-height: 150%;
   color: white;
   text-shadow: #0e0d0c 1px 1px 1px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 #header a {
@@ -146,10 +145,10 @@ main h3 {
   margin-bottom: 12px;
 }
 /*
-##################################
-Sections #########################
-##################################
-*/
+  ##################################
+  Sections #########################
+  ##################################
+  */
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -165,8 +164,8 @@ Sections #########################
 }
 
 #data-info {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   background-color: #231a17;
   text-align: center;
 }
@@ -210,10 +209,10 @@ Sections #########################
   text-align: center;
 }
 /* 
-##################################
-Flip section #####################
-##################################
-*/
+  ##################################
+  Flip section #####################
+  ##################################
+  */
 
 #grid-container {
   display: grid;
@@ -267,96 +266,112 @@ Flip section #####################
 }
 
 /* Responsive test
-
-/* For mobile phones: */
+  
+  /* For mobile phones: */
 /* [class*="xxx"] {
-  width: 100%;
-} */
+    width: 100%;
+  } */
 
 /* @media only screen and (min-width: 600px) { */
 /* For tablets: */
 /* .test {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%; */
+      width: 8.33%;
+    }
+    .col-s-2 {
+      width: 16.66%;
+    }
+    .col-s-3 {
+      width: 25%;
+    }
+    .col-s-4 {
+      width: 33.33%;
+    }
+    .col-s-5 {
+      width: 41.66%;
+    }
+    .col-s-6 {
+      width: 50%;
+    }
+    .col-s-7 {
+      width: 58.33%;
+    }
+    .col-s-8 {
+      width: 66.66%;
+    }
+    .col-s-9 {
+      width: 75%;
+    }
+    .col-s-10 {
+      width: 83.33%;
+    }
+    .col-s-11 {
+      width: 91.66%;
+    }
+    .col-s-12 {
+      width: 100%; */
 /* }
-} */
+  } */
 /* @media only screen and (min-width: 768px) { */
 /* For desktop: */
 /* .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  } */
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    } */
 
-@media screen and (min-widthmax-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
-    background: url("img/mobilebackground11.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-size: 16px;
+    background: linear-gradient(#c48500, #391e07);
     width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    color: #e0dbdb;
+  }
+
+  main {
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  #data-info h3 {
+    font-size: 1rem;
+    margin: 4px;
+  }
+
+  #data-info p {
+    font-size: 0.7rem;
   }
 
   .hide {
@@ -368,68 +383,86 @@ Flip section #####################
   }
 
   #header h1 {
-    font-size: 1.25em;
+    font-size: 2.4rem;
+    padding: 50px;
   }
 
   #header h2 {
     font-size: 1em;
-    margin: 0 auto;
     width: 60%;
-    color: whitesmoke;
   }
 
-  #popCultureMobile {
+  .pop-culture-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 20px;
+  }
+  .styling {
+    padding: 0;
+  }
+  .info-box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  #facts,
+  #video-section,
+  #colonization {
+    background-color: #231a17;
+    display: block;
+    justify-content: center;
+  }
 
-    position: relative;
-    width: 330px;
-    height: 1130px;
-    background: #0e0d0c;
+  #facts img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .articles {
+    width: 100%;
+    padding: 10px;
   }
 }
 
 /* header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header svg {
-  width: 1.5em;
-  cursor: pointer;
-}
-
-a {
-  color: white;
-}
-
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a.logo {
-  font-weight: bold;
-  margin: 0 1em;
-}
-
-a.cta-btn {
-  margin-left: auto;
-  background: #FC85AE;
-  padding: 1em;
-  display: inline-block;
-  border-radius: 2em;
-  font-size: .6em;
-  color: #303A52;
-  font-weight: bold;
-}
-
-/* Navigation */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header svg {
+    width: 1.5em;
+    cursor: pointer;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a.logo {
+    font-weight: bold;
+    margin: 0 1em;
+  }
+  
+  a.cta-btn {
+    margin-left: auto;
+    background: #FC85AE;
+    padding: 1em;
+    display: inline-block;
+    border-radius: 2em;
+    font-size: .6em;
+    color: #303A52;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
 
 nav {
   position: fixed;
