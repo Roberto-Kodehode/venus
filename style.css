@@ -43,6 +43,10 @@ h3 {
   margin: 0;
 }
 
+p {
+  line-height: 140%;
+}
+
 #navbar a {
   color: white;
   padding: 15px 15px;
@@ -82,16 +86,18 @@ h3 {
   font-weight: 100;
   text-shadow: #0e0d0c 1px 1px 1px;
   text-decoration: none;
-  padding: 8px 12px;
-  border: white solid 1px;
+  padding: 16px 20px;
+  border: #bebebe solid 1px;
   border-radius: 12px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 78px 0px rgba(0, 41, 158, 0.3);
+  -webkit-box-shadow: 0px 3px 78px 0px rgba(0, 41, 158, 0.3);
+  -moz-box-shadow: 0px 3px 78px 0px rgba(0, 41, 158, 0.3);
 }
 
 #header a:hover {
-  color: white;
-  text-underline-offset: 4px;
-  text-decoration: underline 1px;
+  text-underline-offset: 8px;
+  text-decoration: white underline 2px;
+  text-underline-offset: 8px;
 }
 
 li {
@@ -117,9 +123,9 @@ iframe {
   width: 340px;
 }
 
-main h2 {
+/* main h2 {
   margin: 24px 0;
-}
+} */
 
 main h3 {
   margin: 12px 0;
@@ -145,6 +151,15 @@ main h3 {
 #colonization img {
   margin-bottom: 12px;
 }
+
+#didyouknow h2 {
+  margin-bottom: 24px;
+}
+
+#didyouknow p {
+  line-height: 150%;
+}
+
 /*
 ##################################
 Sections #########################
@@ -182,6 +197,7 @@ Sections #########################
 #didyouknow {
   background-color: #231a17;
   text-align: center;
+  padding-bottom: 12px;
 }
 
 #pop-culture {
@@ -264,208 +280,4 @@ Flip section #####################
 .flip-box-back {
   background-color: #231a17;
   transform: rotateX(-180deg);
-}
-
-/* Responsive test
-
-/* For mobile phones: */
-/* [class*="xxx"] {
-  width: 100%;
-} */
-
-/* @media only screen and (min-width: 600px) { */
-/* For tablets: */
-/* .test {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%; */
-/* }
-} */
-/* @media only screen and (min-width: 768px) { */
-/* For desktop: */
-/* .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  } */
-
-@media screen and (min-widthmax-width: 480px) {
-  body {
-    background: url("img/mobilebackground11.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100vw;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  #hide {
-    display: none;
-  }
-
-  #header h1 {
-    font-size: 1.25em;
-  }
-
-  #header h2 {
-    font-size: 1em;
-    margin: 0 auto;
-    width: 60%;
-    color: whitesmoke;
-  }
-
-  #popCultureMobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-
-    position: relative;
-    width: 330px;
-    height: 1130px;
-    background: #0e0d0c;
-  }
-}
-
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header svg {
-  width: 1.5em;
-  cursor: pointer;
-}
-
-a {
-  color: white;
-}
-
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a.logo {
-  font-weight: bold;
-  margin: 0 1em;
-}
-
-a.cta-btn {
-  margin-left: auto;
-  background: #FC85AE;
-  padding: 1em;
-  display: inline-block;
-  border-radius: 2em;
-  font-size: .6em;
-  color: #303A52;
-  font-weight: bold;
-}
-
-/* Navigation */
-
-nav {
-  position: fixed;
-  background: #576483;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  width: 80%;
-  visibility: hidden;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: all 0.3s;
-  text-align: center;
-}
-
-nav p {
-  margin-bottom: 0;
-}
-
-nav svg {
-  cursor: pointer;
-  width: 1em;
-}
-
-nav ul li a {
-  display: block;
-  padding: 0.2em;
-  font-size: 1.8em;
-}
-
-.selected {
-  background: #9e579d;
-}
-
-.open-nav {
-  visibility: unset;
-  opacity: 1;
-  transform: translateX(0);
 }
