@@ -208,6 +208,7 @@ Sections #########################
 .pop-culture-wrapper {
   display: flex;
   justify-content: space-between;
+  margin: 16px 0;
 }
 
 .info-box {
